@@ -1,0 +1,9 @@
+<form action="/led1" method="POST">
+    <label>LED 1 : </label>
+    <input name="ledState" type="submit" value="ON">
+    <input name="ledState" type="submit" value="OFF">
+</form>
+
+{% if ledstate %}
+     LED State : {{ ledstate }}
+{% endif %}
